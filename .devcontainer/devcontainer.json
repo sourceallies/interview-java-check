@@ -1,0 +1,24 @@
+{
+	"name": "Interview Project Java 11 Template",
+	"build": {
+		"dockerfile": "Dockerfile",
+		"args": {
+			"VARIANT": "11-bullseye",
+			"INSTALL_MAVEN": "true",
+			"MAVEN_VERSION": "3.6.3",
+			"INSTALL_GRADLE": "false"
+		}
+	},
+	"extensions": [
+		"ms-vsliveshare.vsliveshare",
+		"vscjava.vscode-java-pack",
+		"vscjava.vscode-java-test",
+		"vscjava.vscode-maven"
+	],
+	"settings": {
+		"java.home": "/docker-java-home",
+		"terminal.integrated.defaultProfile.linux": "bash"
+	},
+	"postCreateCommand": "./mvnw test",
+	"forwardPorts": [3000]
+}
