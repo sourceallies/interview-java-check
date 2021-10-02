@@ -1,29 +1,27 @@
 # Interview Check (Java)
-Sample Java project for verifying interview setup
+Java project for verifying interview setup
 
-## Requirements
+For more information about our interview setup, please refer to the following documentation:
+https://github.com/sourceallies/interviews/blob/main/docs/interview-environment.md
+
+### Requirements
  - docker
  - vscode
 
-## Open in dev container
+### Open in dev container
 1. Clone this repository
 2. Open the directory in VS Code
 3. Click the "Open a Remote Window" icon on the bottom-left corner of VS Code
-4. Select "Reopen in Container"
+4. Select "Reopen in Container"## The Problem
 
-Check out this [Link](https://github.com/sourceallies/interviews/blob/main/docs/interview-environment.md) for more information on using a dev container. 
+## Acceptance Criteria
+Make the tests pass. Only update code in the `SolutionTest` class or the `Solution` class.
 
-A development container image will be built according to the configuration in the .devcontainer folder. Nothing is installed on your host OS. Everything can be cleaned up by deleting the development container and corresponding image.
+When you run the application, you should see `Hello World!` printed to the console. Run the application as follows:
 
-## Run project
-You can run the project by typing the following in the console.
 ```
 ./mvnw compile exec:java
 ```
 
-## Test Project 
-You can run the projects test by typing the following in the console. 
-
-```
-./mvnw test
-```
+## Future Enhancements
+Update the application so that it receives the name and greeting via command line args.
