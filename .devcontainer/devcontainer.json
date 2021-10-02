@@ -2,12 +2,6 @@
 	"name": "Interview Project Java 11 Template",
 	"build": {
 		"dockerfile": "Dockerfile",
-		"args": {
-			"VARIANT": "11-bullseye",
-			"INSTALL_MAVEN": "true",
-			"MAVEN_VERSION": "3.6.3",
-			"INSTALL_GRADLE": "false"
-		}
 	},
 	"extensions": [
 		"ms-vsliveshare.vsliveshare",
@@ -16,9 +10,11 @@
 		"vscjava.vscode-maven"
 	],
 	"settings": {
-		"java.home": "/docker-java-home",
 		"terminal.integrated.defaultProfile.linux": "bash"
 	},
 	"postCreateCommand": "./mvnw test",
-	"forwardPorts": [3000]
+	"forwardPorts": [3000],
+
+	// Comment out connect as root instead. More info: https://aka.ms/vscode-remote/containers/non-root.
+	"remoteUser": "coder"
 }
