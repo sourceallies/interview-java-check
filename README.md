@@ -2,7 +2,7 @@
 Sample Java project for verifying interview setup
 
 ## Working with dev containers 
-[Link](https://github.com/sourceallies/interviews/blob/main/docs/interview-environment.md)
+Check out this [Link](https://github.com/sourceallies/interviews/blob/main/docs/interview-environment.md) for mor information on using a dev container. 
 
 ## Run project
 You can run the project by typing the following in the console.
