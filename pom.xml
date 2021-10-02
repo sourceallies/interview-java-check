@@ -9,10 +9,9 @@
 	<description>Interview Problem Template with Maven Build</description>
 	<properties>
 		<java.version>11</java.version>
-
-<maven.compiler.source>11</maven.compiler.source>
- <maven.compiler.target>11</maven.compiler.target>	
- </properties>
+        <maven.compiler.source>11</maven.compiler.source>
+        <maven.compiler.target>11</maven.compiler.target>	
+    </properties>
 	<dependencies>
 		<dependency>
 			<groupId>junit</groupId>
@@ -29,6 +28,14 @@
             <configuration>
                 <source>11</source>
                 <target>11</target>
+            </configuration>
+        </plugin>
+        <plugin>
+			<groupId>org.codehaus.mojo</groupId>
+            <artifactId>exec-maven-plugin</artifactId>
+            <version>3.0.0</version>
+            <configuration>
+                <mainClass>com.sourceallies.interview.Solution</mainClass>
             </configuration>
         </plugin>
     </plugins>
