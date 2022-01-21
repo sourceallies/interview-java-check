@@ -13,3 +13,6 @@ RUN apt-get update \
     && apt-get install -y sudo \
     && echo $USERNAME ALL=\(root\) NOPASSWD:ALL > /etc/sudoers.d/$USERNAME\
     && chmod 0440 /etc/sudoers.d/$USERNAME 
+
+# Install Live Share dependencies
+RUN apt-get install -y --no-install-recommends libicu[0-9][0-9] libkrb5-3 openssl zlib1g
