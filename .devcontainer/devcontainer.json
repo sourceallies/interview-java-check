@@ -1,7 +1,10 @@
 {
-	"name": "Interview Project Java 11 Template",
+	"name": "Interview Project Java Template",
 	"build": {
 		"dockerfile": "Dockerfile",
+		"args": {
+			"VARIANT": "17-bullseye"
+		}
 	},
 	"extensions": [
 		"ms-vsliveshare.vsliveshare",

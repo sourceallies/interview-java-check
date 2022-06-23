@@ -1,4 +1,5 @@
-FROM openjdk:16-bullseye
+ARG VARIANT=17-bullseye
+FROM openjdk:${VARIANT}
 
 ARG USERNAME=coder
 ARG USER_UID=1000
