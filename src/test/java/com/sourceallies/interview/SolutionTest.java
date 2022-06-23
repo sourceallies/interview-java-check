@@ -1,12 +1,13 @@
 package com.sourceallies.interview;
 
-import static org.junit.Assert.assertEquals;
+import static org.junit.jupiter.api.Assertions.assertEquals;
 
-import org.junit.Test;
+import org.junit.jupiter.api.Test;
 
-public class SolutionTest {
+class SolutionTest {
+
     @Test
-    public void shouldPass(){
+    void shouldPass() {
         Solution solution = new Solution();
         String name = "world";
 
@@ -14,7 +15,7 @@ public class SolutionTest {
     }
 
     @Test
-    public void shouldPrintHelloNull(){
+    void shouldPrintHelloNull() {
         Solution solution = new Solution();
         String name = null;
 
@@ -22,12 +23,11 @@ public class SolutionTest {
     }
 
     @Test
-    public void shouldPrintHelloUser(){
+    void shouldPrintHelloUser() {
         Solution solution = new Solution();
         String name = "world";
 
         assertEquals("Hello User", solution.greeting(name));
     }
-
 
 }
